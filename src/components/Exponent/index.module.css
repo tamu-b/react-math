@@ -1,0 +1,9 @@
+.exponent {
+  width: fit-content;
+  display: flex;
+}
+
+.sup {
+  font-size: 80%;
+  line-height: 1;
+}
