@@ -1,1 +1,1 @@
-export {};
+export { Fraction } from './components/Fraction'

@@ -1,0 +1,9 @@
+.fraction {
+  width: fit-content;
+  text-align: center;
+}
+
+.bar {
+  height: 1px;
+  background-color: currentColor;
+}
