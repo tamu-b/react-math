@@ -1,22 +1,25 @@
-import { useLayoutEffect, useRef, type FC, type ReactNode } from 'react'
-import styles from './index.module.css'
+import { useLayoutEffect, useRef } from 'react';
+
+import type { FC, ReactNode } from 'react';
+
+import styles from './index.module.css';
 
 type Props = {
-  base: ReactNode
-  exponent: ReactNode
-}
+  base: ReactNode;
+  exponent: ReactNode;
+};
 
 export const Exponent: FC<Props> = ({ base, exponent }) => {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const exponentRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null);
+  const exponentRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
-    const el = exponentRef.current
-    const container = containerRef.current
-    const shift = el.getBoundingClientRect().height * 0.4
-    container.style.paddingTop = `${shift}px`
-    el.style.transform = `translateY(${-shift}px)`
-  }, [])
+    const el = exponentRef.current;
+    const container = containerRef.current;
+    const shift = el.getBoundingClientRect().height * 0.4;
+    container.style.paddingTop = `${shift}px`;
+    el.style.transform = `translateY(${-shift}px)`;
+  }, []);
 
   return (
     <div ref={containerRef} className={styles.exponent}>
@@ -25,5 +28,5 @@ export const Exponent: FC<Props> = ({ base, exponent }) => {
         {exponent}
       </div>
     </div>
-  )
-}
+  );
+};

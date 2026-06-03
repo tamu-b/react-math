@@ -1,10 +1,11 @@
-import type { FC, ReactNode } from 'react'
-import styles from './index.module.css'
+import type { FC, ReactNode } from 'react';
+
+import styles from './index.module.css';
 
 type Props = {
-  numerator: ReactNode
-  denominator: ReactNode
-}
+  numerator: ReactNode;
+  denominator: ReactNode;
+};
 
 export const Fraction: FC<Props> = ({ numerator, denominator }) => {
   return (
@@ -13,5 +14,5 @@ export const Fraction: FC<Props> = ({ numerator, denominator }) => {
       <div className={styles.bar} />
       <div className={styles.denominator}>{denominator}</div>
     </div>
-  )
-}
+  );
+};
