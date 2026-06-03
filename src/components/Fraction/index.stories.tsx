@@ -17,9 +17,23 @@ export const Default: Story = {
   },
 }
 
+export const LongNumerator: Story = {
+  args: {
+    numerator: 1234567,
+    denominator: 2,
+  },
+}
+
 export const LongDenominator: Story = {
   args: {
     numerator: 1,
     denominator: 1234567,
+  },
+}
+
+export const ComplexFraction: Story = {
+  args: {
+    numerator: <Fraction numerator={1} denominator={2} />,
+    denominator: <Fraction numerator={3} denominator={4} />,
   },
 }

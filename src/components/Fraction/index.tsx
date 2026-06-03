@@ -1,9 +1,9 @@
-import type { FC } from 'react'
+import type { FC, ReactNode } from 'react'
 import styles from './index.module.css'
 
 type Props = {
-  numerator: number
-  denominator: number
+  numerator: ReactNode
+  denominator: ReactNode
 }
 
 export const Fraction: FC<Props> = ({ numerator, denominator }) => {
