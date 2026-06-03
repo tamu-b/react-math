@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.numerator,
+.denominator {
+  margin: 0 0.25em;
+}
+
 .bar {
   height: 1px;
   background-color: currentColor;
